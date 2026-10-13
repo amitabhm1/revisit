@@ -20,6 +20,8 @@ corner Take 3 skipped).
 
 ## How it works
 
+<p align="center"><img src="assets/pipeline.png" width="100%" alt="Revisit in six stages"></p>
+
 1. Pick 28 steady keyframes per scan (lowest gyro rate in each time window), with the LiDAR depth and ARKit
    camera path that Stray Scanner records.
 2. Reconstruct all scans together with [Pi3](https://github.com/yyfz/Pi3) and set metric scale from the ARKit path.
