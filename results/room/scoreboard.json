@@ -1,0 +1,72 @@
+{
+  "qwen": {
+    "null_pair": {
+      "proposals": 17,
+      "false_changes": 11
+    },
+    "before_after": {
+      "found": 7,
+      "static_false_flags": 1,
+      "per_change": {
+        "1+4 moved chairs": 2,
+        "2 added books": 1,
+        "3 removed chair": 0,
+        "5 removed flat item": 1,
+        "6 cup": 1,
+        "7 plant": 1,
+        "8 pillow": 1,
+        "9 hat": 0
+      }
+    },
+    "with_relook": {
+      "found": 6,
+      "static_false_flags": 2,
+      "per_change": {
+        "1+4 moved chairs": 2,
+        "2 added books": 1,
+        "3 removed chair": 0,
+        "5 removed flat item": 1,
+        "6 cup": 1,
+        "7 plant": 1,
+        "8 pillow": 0,
+        "9 hat": 0
+      }
+    },
+    "hidden_plant": "UNVERIFIED -> REMOVED"
+  },
+  "sensenova": {
+    "null_pair": {
+      "proposals": 17,
+      "false_changes": 10
+    },
+    "before_after": {
+      "found": 8,
+      "static_false_flags": 1,
+      "per_change": {
+        "1+4 moved chairs": 2,
+        "2 added books": 1,
+        "3 removed chair": 1,
+        "5 removed flat item": 1,
+        "6 cup": 1,
+        "7 plant": 1,
+        "8 pillow": 1,
+        "9 hat": 0
+      }
+    },
+    "with_relook": {
+      "found": 7,
+      "static_false_flags": 3,
+      "per_change": {
+        "1+4 moved chairs": 2,
+        "2 added books": 1,
+        "3 removed chair": 1,
+        "5 removed flat item": 1,
+        "6 cup": 1,
+        "7 plant": 1,
+        "8 pillow": 0,
+        "9 hat": 0
+      }
+    },
+    "hidden_plant": "UNVERIFIED -> REMOVED"
+  }
+}

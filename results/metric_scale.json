@@ -1,0 +1,58 @@
+{
+  "Take_1_vs_Take_2": {
+    "arkit_per_take": {
+      "Take_1": {
+        "scale": 8.219,
+        "rel_spread": 0.031,
+        "pairs": 376
+      },
+      "Take_2": {
+        "scale": 8.064,
+        "rel_spread": 0.03,
+        "pairs": 375
+      }
+    },
+    "arkit_pooled": 8.145,
+    "lidar_median_uncapped": 15.6,
+    "lidar_median_capped": 12.0
+  },
+  "Take_1_vs_Take_3": {
+    "arkit_per_take": {
+      "Take_1": {
+        "scale": 8.478,
+        "rel_spread": 0.022,
+        "pairs": 376
+      },
+      "Take_3": {
+        "scale": 8.359,
+        "rel_spread": 0.021,
+        "pairs": 378
+      }
+    },
+    "arkit_pooled": 8.427,
+    "lidar_median_uncapped": 14.11,
+    "lidar_median_capped": 12.0
+  },
+  "Take_1_vs_Take_3_relook_Take_4": {
+    "arkit_per_take": {
+      "Take_1": {
+        "scale": 8.507,
+        "rel_spread": 0.026,
+        "pairs": 376
+      },
+      "Take_3": {
+        "scale": 8.379,
+        "rel_spread": 0.024,
+        "pairs": 378
+      },
+      "Take_4": {
+        "scale": 8.835,
+        "rel_spread": 0.05,
+        "pairs": 91
+      }
+    },
+    "arkit_pooled": 8.445,
+    "lidar_median_uncapped": 15.3,
+    "lidar_median_capped": 12.0
+  }
+}

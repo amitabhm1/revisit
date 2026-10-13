@@ -1,0 +1,28 @@
+# Recipe of the room adapter sensenova8b-gdpo-rlcr-step2290, scaled to one 8-GPU node.
+# Our run used six 8-GPU nodes (one stopped near step 450) for 2290 steps, about 95.2k training cards, with LoRA weights
+# averaged across nodes every 5 steps. max_steps below gives the same number of cards on 8 GPUs
+# (about 3 days at ~21 s per step). The result will be close to, not identical with, our adapter.
+base_model: sensenova8b
+card_pool:
+  - ${REVISIT_DATA_DIR}/artifacts/scenediff/proposals
+  - ${REVISIT_DATA_DIR}/artifacts/card_pool/pi3x_dinov3-vith16plus_sam1
+  - ${REVISIT_DATA_DIR}/artifacts/card_pool/pi3x_dinov3-vitl16_sam1
+  - ${REVISIT_DATA_DIR}/artifacts/card_pool/pi3x_dinov2-vitb14_sam1
+  - ${REVISIT_DATA_DIR}/artifacts/card_pool/pi3x_dinov3-vith16plus_sam3   # made with the SAM 3 prompt bug, see docs/training.md
+gt_dir: ${REVISIT_DATA_DIR}/scenediff/scenediff_benchmark/data
+output_dir: outputs/train/sensenova8b-gdpo-rlcr-room
+mode: gdpo_rlcr
+group_size: 8
+max_steps: 11900
+lr: 3.0e-5
+lr_schedule: cosine_floor
+lr_decay_steps: 9000     # 1,500 steps x 48 cards in the original run
+lr_floor: 0.25
+lora_r: 32
+lora_alpha: 64
+kl_beta: 0.02
+balance: true
+sampling: shuffled
+augment: true
+checkpoint_every: 50
+milestone_every: 500

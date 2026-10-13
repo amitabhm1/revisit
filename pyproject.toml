@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "revisit"
+version = "1.0.0"
+description = "Find what changed between two phone scans of a room"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+# Versions are the ones behind the reported numbers (Python 3.10, CUDA 12.1).
+dependencies = [
+    "torch==2.5.1",
+    "torchvision==0.20.1",
+    "torch-scatter==2.1.2",
+    "numpy==1.26.4",
+    "scipy==1.15.3",
+    "scikit-image==0.25.2",
+    "opencv-python-headless==4.11.0.86",
+    "pillow==12.3.0",
+    "matplotlib==3.10.9",
+    "pyyaml==6.0.3",
+    "einops==0.8.2",
+    "safetensors==0.8.0",
+    "faiss-cpu==1.15.1",
+    "open3d==0.20.0",
+    "pycocotools==2.0.11",
+    "transformers==4.57.6",
+    "accelerate==1.15.0",
+    "peft==0.21.2",
+    "huggingface-hub==0.36.2",
+    "hydra-core==1.3.7",
+    "iopath==0.1.10",
+    "rerun-sdk==0.23.1",
+    "pi3 @ git+https://github.com/yyfz/Pi3@9fa3ddb3f8d53041f8b2738df404f62223bbaa7b",
+    "SAM-2 @ git+https://github.com/facebookresearch/sam2@2b90b9f5ceec907a1c18123530e92e794ad901a4",
+]
+
+[project.optional-dependencies]
+# SAM 3.1, only for the mask-backend ablation.
+ablation = [
+    "sam3 @ git+https://github.com/facebookresearch/sam3@0570b3a5be9c4e694f23d85232fb55f4a6f1f7fc",
+    "timm==1.0.30",
+    "ftfy==6.1.1",
+]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["revisit*"]
+
+[tool.setuptools.package-data]
+"revisit.proposals" = ["LICENSE", "MODIFICATIONS.md"]
+"revisit.proposals.segment_anything_ls" = ["LICENSE", "README.md"]

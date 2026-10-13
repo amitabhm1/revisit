@@ -1,0 +1,91 @@
+# Every model and dataset Revisit uses: where it is downloaded from and where it is stored.
+# Models go to $REVISIT_CKPT_DIR (default ./checkpoints), datasets to $REVISIT_DATA_DIR (default ./data).
+# scripts/download_checkpoints.py and scripts/download_data.py read this file.
+
+# Hugging Face account hosting the Revisit adapters, room captures and artifacts.
+# Change it only if you host copies under another account.
+hf_org: amitabh3
+
+# Public models. Local folder = checkpoints/<repo> (or checkpoints/<path> for plain URLs).
+# "sets" decides what each download set fetches.
+models:
+  pi3:
+    repo: yyfz233/Pi3
+    sets: [room, scenediff]
+  dinov3:
+    repo: facebook/dinov3-vith16plus-pretrain-lvd1689m
+    gated: true          # accept the DINOv3 license on its Hugging Face page first
+    sets: [room, scenediff]
+  sam2.1:
+    repo: facebook/sam2.1-hiera-large
+    file: sam2.1_hiera_large.pt
+    sets: [room]
+  sam1:
+    url: https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
+    path: sam/sam_vit_h_4b8939.pth
+    sets: [scenediff, ablation]
+  sam3.1:
+    repo: facebook/sam3.1
+    file: sam3.1_multiplex.pt
+    gated: true
+    sets: [ablation]
+  qwen3vl8b:
+    repo: Qwen/Qwen3-VL-8B-Instruct
+    sets: [room, scenediff, train]
+  sensenova8b:
+    repo: sensenova/SenseNova-SI-1.3-Qwen3-VL-8B
+    sets: [room, scenediff, train]
+
+# Our LoRA adapters: one Hugging Face model repo, one subfolder per adapter.
+# Local folder = checkpoints/revisit-verifier-lora/<subfolder>.
+adapters:
+  repo: revisit-verifier-lora
+  items:
+    qwen3vl8b-gdpo-rlcr-step2460:
+      subfolder: qwen3vl8b-gdpo-rlcr-step2460
+      base: qwen3vl8b
+      rl: gdpo_rlcr
+      sets: [room]
+    sensenova8b-gdpo-rlcr-step2290:
+      subfolder: sensenova8b-gdpo-rlcr-step2290
+      base: sensenova8b
+      rl: gdpo_rlcr
+      sets: [room]
+    qwen3vl8b-grpo-step45:
+      subfolder: qwen3vl8b-grpo-step45
+      base: qwen3vl8b
+      rl: grpo
+      sets: [scenediff]
+    qwen3vl8b-gdpo-step45:
+      subfolder: qwen3vl8b-gdpo-step45
+      base: qwen3vl8b
+      rl: gdpo
+      sets: [scenediff]
+    qwen3vl8b-gdpo-rlcr-step45:
+      subfolder: qwen3vl8b-gdpo-rlcr-step45
+      base: qwen3vl8b
+      rl: gdpo_rlcr
+      sets: [scenediff]
+
+# Verifier presets accepted by --verifier.
+verifiers:
+  qwen: {base: qwen3vl8b, adapter: qwen3vl8b-gdpo-rlcr-step2460}
+  sensenova: {base: sensenova8b, adapter: sensenova8b-gdpo-rlcr-step2290}
+  qwen-zeroshot: {base: qwen3vl8b}
+  sensenova-zeroshot: {base: sensenova8b}
+  qwen-grpo: {base: qwen3vl8b, adapter: qwen3vl8b-grpo-step45}
+  qwen-gdpo: {base: qwen3vl8b, adapter: qwen3vl8b-gdpo-step45}
+  qwen-gdpo-rlcr: {base: qwen3vl8b, adapter: qwen3vl8b-gdpo-rlcr-step45}
+
+# Datasets. Local folders are under $REVISIT_DATA_DIR.
+datasets:
+  scenediff:
+    repo: yuqun/SceneDiff
+    file: scenediff_benchmark.zip
+    local: scenediff                 # -> data/scenediff/scenediff_benchmark/{data,splits}
+  room:
+    repo: "{hf_org}/revisit-room-captures"
+    local: room                      # -> data/room/Take_1 ... Take_4
+  artifacts:
+    repo: "{hf_org}/revisit-artifacts"
+    local: artifacts                 # -> data/artifacts/...

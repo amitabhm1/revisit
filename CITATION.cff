@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use Revisit, please cite it as below."
+title: "Revisit: Did It Change, or Did We Just Not Look?"
+type: software
+authors:
+  - given-names: Amitabh
+    family-names: Mahapatra
+version: 1.0.0
+date-released: 2026-10-12
+license: MIT
+repository-code: "https://github.com/amitabhm1/revisit"

@@ -1,0 +1,19 @@
+# Recipe of the SceneDiff adapter qwen3vl8b-gdpo-rlcr-step45: one 8-GPU node, 45 steps (about 8 minutes).
+# The card pool is every card of the validation half of the SceneDiff proposals (no balancing), in split
+# order; the test split stays held out.
+base_model: qwen3vl8b
+card_pool:
+  - ${REVISIT_DATA_DIR}/artifacts/scenediff/proposals
+gt_dir: ${REVISIT_DATA_DIR}/scenediff/scenediff_benchmark/data
+output_dir: outputs/train/qwen3vl8b-gdpo-rlcr-step45
+mode: gdpo_rlcr
+group_size: 6
+max_steps: 45
+lr: 1.5e-5
+lr_schedule: constant
+lora_r: 16
+lora_alpha: 32
+kl_beta: 0.02
+balance: false
+sampling: sequential
+augment: false

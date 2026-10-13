@@ -1,0 +1,71 @@
+# SceneDiff benchmark, Stage 1-2 proposals: Pi3 + SAM 1 ViT-H + DINOv3 ViT-H+/16 (SceneDiff defaults).
+# Every verifier row in the SceneDiff table starts from these proposals.
+
+models:
+  pi3:
+    name: "${REVISIT_CKPT_DIR}/yyfz233/Pi3"
+    device: "cuda"
+  sam:
+    backend: "sam1"
+    checkpoint: "${REVISIT_CKPT_DIR}/sam/sam_vit_h_4b8939.pth"
+    points_per_side: 32
+    pred_iou_thresh: 0.7
+    box_nms_thresh: 0.7
+    stability_score_thresh: 0.85
+    crop_n_layers: 0
+    crop_n_points_downscale_factor: 1
+    min_mask_region_area: 100
+  dinov3:
+    model_name: "dinov3_vith16plus"
+    feature_dim: 1280
+    weight_url: "${REVISIT_CKPT_DIR}/facebook/dinov3-vith16plus-pretrain-lvd1689m"
+
+dataset:
+  gt_dir: "${REVISIT_DATA_DIR}/scenediff/scenediff_benchmark/data"
+  splits:
+    val: "${REVISIT_DATA_DIR}/scenediff/scenediff_benchmark/splits/val_split.json"
+    test: "${REVISIT_DATA_DIR}/scenediff/scenediff_benchmark/splits/test_split.json"
+  resample_rate: 30
+
+processing:
+  visible_percentage: 0.5
+  subsample_size: 1000000
+  total_voxel_number: 200
+  occlusion_threshold: -0.02
+
+costs:
+  lambda_geo: 1.0
+  lambda_dino: 0.5
+  lambda_dino_region_match: 0.1
+
+detection:
+  min_detection_pixel: 100
+  threshold_method: "max_entropy"
+  change_region_threshold: null
+  filter_percentage_before_threshold: 0.7
+  max_score: 0.5
+  max_detected_objects: 1000
+
+merging:
+  geometry_distance_threshold_of_voxel_size: 2
+  visual_threshold_ratio: 0.7
+  geometry_threshold_ratio: 0.5
+  general_threshold: 1.4
+  object_similarity_threshold: 0.7
+
+aggregation:
+  mean_over_visible_region_during_cost_aggregation: true
+  merge_pc_before_and_after: true
+
+cache:
+  use_cache: false
+  save_cache: false
+
+visualization:
+  vis_pc: false
+  save_detections: false
+  save_gt_visualization: false
+
+output:
+  output_dir: "outputs/scenediff/proposals"
+  save_object_masks: true

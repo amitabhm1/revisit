@@ -1,0 +1,1718 @@
+{
+  "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+  "geometry_backbone": "Pi3 (Pi3) + SAM 2.1 Hiera-L + DINOv3 (dinov3_vith16plus)",
+  "sam_backend": "sam2.1",
+  "sam_checkpoint": "sam2.1_hiera_large.pt",
+  "vlm_model": "Qwen3-VL-8B-Instruct",
+  "vlm_adapter": "revisit-verifier-lora/qwen3vl8b-gdpo-rlcr-step2460",
+  "lidar_calibration": {
+    "lidar_mode": "auto",
+    "scale_source": "arkit_trajectory",
+    "scale_factor": 8.4449,
+    "per_take_scale": {
+      "Take_1": 8.5074,
+      "Take_3": 8.3787,
+      "Take_4": 8.8354
+    },
+    "rel_spread": 0.0293,
+    "status": "applied_arkit_metric_scale",
+    "lidar_median_estimate_capped": 12.0,
+    "lidar_valid_ratio": 0.5503,
+    "relook_scan": "Take_4"
+  },
+  "candidates": [
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 0,
+      "candidate_type": "removed",
+      "has_video_1": true,
+      "has_video_2": false,
+      "n_frames_v1": 7,
+      "n_frames_v2": 0,
+      "best_frame_v1": 2,
+      "best_frame_v2": 23,
+      "bbox_2d_v1": [
+        10,
+        281,
+        391,
+        517
+      ],
+      "bbox_2d_v2": [
+        0,
+        0,
+        391,
+        517
+      ],
+      "centroid_3d_v1": [
+        -0.1645541489124298,
+        -0.11655254662036896,
+        0.42945200204849243
+      ],
+      "centroid_3d_v2": null,
+      "bbox_3d_min_v1": [
+        -0.2785043716430664,
+        -0.16611744463443756,
+        0.3553355634212494
+      ],
+      "bbox_3d_max_v1": [
+        -0.07159428298473358,
+        -0.03508846089243889,
+        0.5347215533256531
+      ],
+      "bbox_3d_min_v2": null,
+      "bbox_3d_max_v2": null,
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.7205770611763,
+      "mean_score": 0.918842077255249,
+      "max_score": 1.1644535064697266,
+      "c_geo": 0.07334060966968536,
+      "c_match": 0.6160677671432495,
+      "c_render": 0.965063214302063,
+      "vis_coverage": 0.9936301254288767,
+      "v1_crop_path": "verifier_crops/obj_0_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_0_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_0_pair.jpg",
+      "delta_3d_m": 0.0,
+      "scan2_frustum_ratio": 0.1905
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 1,
+      "candidate_type": "moved",
+      "has_video_1": true,
+      "has_video_2": true,
+      "n_frames_v1": 1,
+      "n_frames_v2": 4,
+      "best_frame_v1": 0,
+      "best_frame_v2": 0,
+      "bbox_2d_v1": [
+        0,
+        315,
+        222,
+        421
+      ],
+      "bbox_2d_v2": [
+        0,
+        285,
+        234,
+        434
+      ],
+      "centroid_3d_v1": [
+        -0.07920065522193909,
+        -0.13671281933784485,
+        0.4327743947505951
+      ],
+      "centroid_3d_v2": [
+        0.14318133890628815,
+        -0.06874590367078781,
+        0.38623228669166565
+      ],
+      "bbox_3d_min_v1": [
+        -0.10396196693181992,
+        -0.15594083070755005,
+        0.3982541561126709
+      ],
+      "bbox_3d_max_v1": [
+        -0.05200240761041641,
+        -0.12167421728372574,
+        0.4667838513851166
+      ],
+      "bbox_3d_min_v2": [
+        -0.10556885600090027,
+        -0.14749175310134888,
+        0.2795295715332031
+      ],
+      "bbox_3d_max_v2": [
+        0.47987762093544006,
+        -0.010283910669386387,
+        0.45550522208213806
+      ],
+      "delta_3d": 0.23714852046831075,
+      "dino_similarity": 0.8438966274261475,
+      "cross_view_overlap": 0.6546912789344788,
+      "mean_score": 0.8039957761764527,
+      "max_score": 0.8912274837493896,
+      "c_geo": 0.03617232106626034,
+      "c_match": 0.27387939393520355,
+      "c_render": 0.5470303595066071,
+      "vis_coverage": 0.8946728769210992,
+      "v1_crop_path": "verifier_crops/obj_1_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_1_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_1_pair.jpg",
+      "delta_3d_m": 2.0026919536867234
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 2,
+      "candidate_type": "moved",
+      "has_video_1": true,
+      "has_video_2": true,
+      "n_frames_v1": 3,
+      "n_frames_v2": 8,
+      "best_frame_v1": 2,
+      "best_frame_v2": 2,
+      "bbox_2d_v1": [
+        0,
+        134,
+        248,
+        270
+      ],
+      "bbox_2d_v2": [
+        0,
+        26,
+        333,
+        221
+      ],
+      "centroid_3d_v1": [
+        -0.011994237080216408,
+        -0.0326763279736042,
+        0.2704060971736908
+      ],
+      "centroid_3d_v2": [
+        -0.11463744193315506,
+        0.019137632101774216,
+        0.18387006223201752
+      ],
+      "bbox_3d_min_v1": [
+        -0.16848932206630707,
+        -0.1262899488210678,
+        -0.039537422358989716
+      ],
+      "bbox_3d_max_v1": [
+        0.3171241283416748,
+        0.11649078130722046,
+        0.4087330102920532
+      ],
+      "bbox_3d_min_v2": [
+        -0.17859867215156555,
+        -0.07216129451990128,
+        0.07524611055850983
+      ],
+      "bbox_3d_max_v2": [
+        -0.05059164762496948,
+        0.12364210933446884,
+        0.2713140845298767
+      ],
+      "delta_3d": 0.14390552214769847,
+      "dino_similarity": 0.7371681928634644,
+      "cross_view_overlap": 0.5598824620246887,
+      "mean_score": 0.845157113942233,
+      "max_score": 0.9254792332649231,
+      "c_geo": 0.077906783670187,
+      "c_match": 0.24037635326385498,
+      "c_render": 0.53449547290802,
+      "vis_coverage": 0.922771760617961,
+      "v1_crop_path": "verifier_crops/obj_2_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_2_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_2_pair.jpg",
+      "delta_3d_m": 1.2152655674476078
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 3,
+      "candidate_type": "removed",
+      "has_video_1": true,
+      "has_video_2": false,
+      "n_frames_v1": 9,
+      "n_frames_v2": 0,
+      "best_frame_v1": 15,
+      "best_frame_v2": 34,
+      "bbox_2d_v1": [
+        219,
+        224,
+        387,
+        406
+      ],
+      "bbox_2d_v2": [
+        0,
+        228,
+        374,
+        413
+      ],
+      "centroid_3d_v1": [
+        0.3700304627418518,
+        -0.005929884035140276,
+        0.2726248502731323
+      ],
+      "centroid_3d_v2": null,
+      "bbox_3d_min_v1": [
+        -0.07139801234006882,
+        -0.14974403381347656,
+        0.1526554673910141
+      ],
+      "bbox_3d_max_v1": [
+        0.49451470375061035,
+        0.07917913049459457,
+        0.4493134617805481
+      ],
+      "bbox_3d_min_v2": null,
+      "bbox_3d_max_v2": null,
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.8029434680938721,
+      "mean_score": 0.8674352433946397,
+      "max_score": 1.007053256034851,
+      "c_geo": 0.07475513219833374,
+      "c_match": 0.2728383243083954,
+      "c_render": 0.8180415034294128,
+      "vis_coverage": 0.9147993579454253,
+      "v1_crop_path": "verifier_crops/obj_3_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_3_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_3_pair.jpg",
+      "delta_3d_m": 0.0,
+      "scan2_frustum_ratio": 0.2381
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 4,
+      "candidate_type": "replaced",
+      "has_video_1": true,
+      "has_video_2": true,
+      "n_frames_v1": 1,
+      "n_frames_v2": 1,
+      "best_frame_v1": 0,
+      "best_frame_v2": 28,
+      "bbox_2d_v1": [
+        183,
+        341,
+        246,
+        370
+      ],
+      "bbox_2d_v2": [
+        165,
+        331,
+        391,
+        517
+      ],
+      "centroid_3d_v1": [
+        -0.10781125724315643,
+        -0.13388147950172424,
+        0.4221915602684021
+      ],
+      "centroid_3d_v2": [
+        -0.11673345416784286,
+        -0.13355572521686554,
+        0.42858704924583435
+      ],
+      "bbox_3d_min_v1": [
+        -0.1161426305770874,
+        -0.1408650130033493,
+        0.4073793590068817
+      ],
+      "bbox_3d_max_v1": [
+        -0.10180622339248657,
+        -0.12529917061328888,
+        0.4329475164413452
+      ],
+      "bbox_3d_min_v2": [
+        -0.12407505512237549,
+        -0.13998234272003174,
+        0.417082816362381
+      ],
+      "bbox_3d_max_v2": [
+        -0.1126679927110672,
+        -0.12556059658527374,
+        0.4457533359527588
+      ],
+      "delta_3d": 0.010982440215063557,
+      "dino_similarity": 0.8193190693855286,
+      "cross_view_overlap": 0.7044263482093811,
+      "mean_score": 0.8120144903659821,
+      "max_score": 0.8790100812911987,
+      "c_geo": 0.024254210758954287,
+      "c_match": 0.2384359136922285,
+      "c_render": 0.42618077993392944,
+      "vis_coverage": 0.602752181354631,
+      "v1_crop_path": "verifier_crops/obj_4_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_4_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_4_pair.jpg",
+      "delta_3d_m": 0.092745443265341
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 5,
+      "candidate_type": "moved",
+      "has_video_1": true,
+      "has_video_2": true,
+      "n_frames_v1": 1,
+      "n_frames_v2": 1,
+      "best_frame_v1": 0,
+      "best_frame_v2": 10,
+      "bbox_2d_v1": [
+        263,
+        336,
+        318,
+        360
+      ],
+      "bbox_2d_v2": [
+        267,
+        409,
+        391,
+        517
+      ],
+      "centroid_3d_v1": [
+        -0.11417954415082932,
+        -0.12480167299509048,
+        0.40431642532348633
+      ],
+      "centroid_3d_v2": [
+        0.1531178206205368,
+        0.20875002443790436,
+        -0.24939921498298645
+      ],
+      "bbox_3d_min_v1": [
+        -0.12780006229877472,
+        -0.13625875115394592,
+        0.372608482837677
+      ],
+      "bbox_3d_max_v1": [
+        -0.10202457755804062,
+        -0.10494495928287506,
+        0.42171305418014526
+      ],
+      "bbox_3d_min_v2": [
+        0.10240235924720764,
+        0.18766573071479797,
+        -0.26647356152534485
+      ],
+      "bbox_3d_max_v2": [
+        0.24687905609607697,
+        0.2683686912059784,
+        -0.21512137353420258
+      ],
+      "delta_3d": 0.7810561788088297,
+      "dino_similarity": 0.8034084439277649,
+      "cross_view_overlap": 0.5853015780448914,
+      "mean_score": 0.8203377425670624,
+      "max_score": 0.8449928164482117,
+      "c_geo": 0.019047351088374853,
+      "c_match": 0.16131137311458588,
+      "c_render": 0.36131860315799713,
+      "vis_coverage": 0.4668388324235011,
+      "v1_crop_path": "verifier_crops/obj_5_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_5_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_5_pair.jpg",
+      "delta_3d_m": 6.595929511129976
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 6,
+      "candidate_type": "removed",
+      "has_video_1": true,
+      "has_video_2": false,
+      "n_frames_v1": 1,
+      "n_frames_v2": 0,
+      "best_frame_v1": 0,
+      "best_frame_v2": 28,
+      "bbox_2d_v1": [
+        82,
+        355,
+        159,
+        384
+      ],
+      "bbox_2d_v2": [
+        49,
+        307,
+        185,
+        393
+      ],
+      "centroid_3d_v1": [
+        -0.10182216018438339,
+        -0.142098069190979,
+        0.44112059473991394
+      ],
+      "centroid_3d_v2": null,
+      "bbox_3d_min_v1": [
+        -0.11520157009363174,
+        -0.14702217280864716,
+        0.43211257457733154
+      ],
+      "bbox_3d_max_v1": [
+        -0.09226628392934799,
+        -0.13725438714027405,
+        0.44941815733909607
+      ],
+      "bbox_3d_min_v2": null,
+      "bbox_3d_max_v2": null,
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.7044263482093811,
+      "mean_score": 0.8645904660224915,
+      "max_score": 0.8645904660224915,
+      "c_geo": 0.03359606862068176,
+      "c_match": 0.32450419664382935,
+      "c_render": 0.5083749294281006,
+      "vis_coverage": 0.6073567151411463,
+      "v1_crop_path": "verifier_crops/obj_6_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_6_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_6_pair.jpg",
+      "delta_3d_m": 0.0,
+      "scan2_frustum_ratio": 0.1667
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 7,
+      "candidate_type": "moved",
+      "has_video_1": true,
+      "has_video_2": true,
+      "n_frames_v1": 1,
+      "n_frames_v2": 1,
+      "best_frame_v1": 0,
+      "best_frame_v2": 28,
+      "bbox_2d_v1": [
+        0,
+        337,
+        384,
+        517
+      ],
+      "bbox_2d_v2": [
+        0,
+        295,
+        391,
+        517
+      ],
+      "centroid_3d_v1": [
+        -0.1142304539680481,
+        -0.14178113639354706,
+        0.4418436586856842
+      ],
+      "centroid_3d_v2": [
+        -0.049739737063646317,
+        -0.10072387009859085,
+        0.439670592546463
+      ],
+      "bbox_3d_min_v1": [
+        -0.14011354744434357,
+        -0.15594083070755005,
+        0.3825152814388275
+      ],
+      "bbox_3d_max_v1": [
+        -0.08682959526777267,
+        -0.11245877295732498,
+        0.4667838513851166
+      ],
+      "bbox_3d_min_v2": [
+        -0.12685684859752655,
+        -0.14370664954185486,
+        0.39412930607795715
+      ],
+      "bbox_3d_max_v2": [
+        0.07634268701076508,
+        -0.01422260794788599,
+        0.460056334733963
+      ],
+      "delta_3d": 0.07648185339611005,
+      "dino_similarity": 0.8330090045928955,
+      "cross_view_overlap": 0.7044263482093811,
+      "mean_score": 0.8063627183437347,
+      "max_score": 0.8540844321250916,
+      "c_geo": 0.014269044157117605,
+      "c_match": 0.0,
+      "c_render": 0.276722714304924,
+      "vis_coverage": 0.35609655541689367,
+      "v1_crop_path": "verifier_crops/obj_7_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_7_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_7_pair.jpg",
+      "delta_3d_m": 0.6458804469745981
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 8,
+      "candidate_type": "removed",
+      "has_video_1": true,
+      "has_video_2": false,
+      "n_frames_v1": 1,
+      "n_frames_v2": 0,
+      "best_frame_v1": 1,
+      "best_frame_v2": 28,
+      "bbox_2d_v1": [
+        7,
+        342,
+        216,
+        517
+      ],
+      "bbox_2d_v2": [
+        0,
+        257,
+        262,
+        479
+      ],
+      "centroid_3d_v1": [
+        -0.049463316798210144,
+        -0.09106384962797165,
+        0.4339045286178589
+      ],
+      "centroid_3d_v2": null,
+      "bbox_3d_min_v1": [
+        -0.10286534577608109,
+        -0.15938043594360352,
+        0.3782534599304199
+      ],
+      "bbox_3d_max_v1": [
+        0.01289845909923315,
+        -0.021596508100628853,
+        0.4741666615009308
+      ],
+      "bbox_3d_min_v2": null,
+      "bbox_3d_max_v2": null,
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.7841137051582336,
+      "mean_score": 0.7669225335121155,
+      "max_score": 0.7669225335121155,
+      "c_geo": 0.03424778953194618,
+      "c_match": 0.31665271520614624,
+      "c_render": 0.5527772307395935,
+      "vis_coverage": 0.8501333333333333,
+      "v1_crop_path": "verifier_crops/obj_8_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_8_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_8_pair.jpg",
+      "delta_3d_m": 0.0,
+      "scan2_frustum_ratio": 0.1667
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 9,
+      "candidate_type": "moved",
+      "has_video_1": true,
+      "has_video_2": true,
+      "n_frames_v1": 11,
+      "n_frames_v2": 11,
+      "best_frame_v1": 23,
+      "best_frame_v2": 32,
+      "bbox_2d_v1": [
+        115,
+        179,
+        356,
+        393
+      ],
+      "bbox_2d_v2": [
+        7,
+        317,
+        280,
+        517
+      ],
+      "centroid_3d_v1": [
+        0.007965144701302052,
+        0.18010348081588745,
+        -0.10818478465080261
+      ],
+      "centroid_3d_v2": [
+        -0.02639532834291458,
+        0.21765556931495667,
+        -0.18852564692497253
+      ],
+      "bbox_3d_min_v1": [
+        -0.1405850648880005,
+        0.1169934943318367,
+        -0.3574535846710205
+      ],
+      "bbox_3d_max_v1": [
+        0.20298703014850616,
+        0.3311879634857178,
+        0.014046767726540565
+      ],
+      "bbox_3d_min_v2": [
+        -0.11159966886043549,
+        0.14974431693553925,
+        -0.3043769299983978
+      ],
+      "bbox_3d_max_v2": [
+        0.14079180359840393,
+        0.3101542890071869,
+        -0.08995644748210907
+      ],
+      "delta_3d": 0.09510760016645044,
+      "dino_similarity": 0.887262761592865,
+      "cross_view_overlap": 0.11914201080799103,
+      "mean_score": 1.0470090969042345,
+      "max_score": 1.400323510169983,
+      "c_geo": 0.10120490565896034,
+      "c_match": 0.2003924697637558,
+      "c_render": 0.6643825471401215,
+      "vis_coverage": 0.8557973104328382,
+      "v1_crop_path": "verifier_crops/obj_9_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_9_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_9_pair.jpg",
+      "delta_3d_m": 0.8031727341653657
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 10,
+      "candidate_type": "moved",
+      "has_video_1": true,
+      "has_video_2": true,
+      "n_frames_v1": 1,
+      "n_frames_v2": 1,
+      "best_frame_v1": 2,
+      "best_frame_v2": 17,
+      "bbox_2d_v1": [
+        259,
+        229,
+        391,
+        480
+      ],
+      "bbox_2d_v2": [
+        281,
+        376,
+        391,
+        517
+      ],
+      "centroid_3d_v1": [
+        -0.20662331581115723,
+        -0.055315252393484116,
+        0.3415718674659729
+      ],
+      "centroid_3d_v2": [
+        -0.2289644330739975,
+        -0.049689117819070816,
+        0.31163516640663147
+      ],
+      "bbox_3d_min_v1": [
+        -0.24480405449867249,
+        -0.16018427908420563,
+        0.2910826802253723
+      ],
+      "bbox_3d_max_v1": [
+        -0.16497786343097687,
+        0.01369357667863369,
+        0.4547232985496521
+      ],
+      "bbox_3d_min_v2": [
+        -0.2682279050350189,
+        -0.06637632101774216,
+        0.2666284441947937
+      ],
+      "bbox_3d_max_v2": [
+        -0.2019316852092743,
+        -0.016977708786725998,
+        0.44609183073043823
+      ],
+      "delta_3d": 0.03777545474402343,
+      "dino_similarity": 0.8568089008331299,
+      "cross_view_overlap": 0.1187627986073494,
+      "mean_score": 1.104553759098053,
+      "max_score": 1.2833583354949951,
+      "c_geo": 0.06633955240249634,
+      "c_match": 0.28857844322919846,
+      "c_render": 0.7620965838432312,
+      "vis_coverage": 0.8221244179636645,
+      "v1_crop_path": "verifier_crops/obj_10_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_10_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_10_pair.jpg",
+      "delta_3d_m": 0.31900936642285255
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 11,
+      "candidate_type": "removed",
+      "has_video_1": true,
+      "has_video_2": false,
+      "n_frames_v1": 1,
+      "n_frames_v2": 0,
+      "best_frame_v1": 2,
+      "best_frame_v2": 23,
+      "bbox_2d_v1": [
+        361,
+        412,
+        391,
+        517
+      ],
+      "bbox_2d_v2": [
+        0,
+        0,
+        391,
+        517
+      ],
+      "centroid_3d_v1": [
+        -0.1802925020456314,
+        -0.15387926995754242,
+        0.445978581905365
+      ],
+      "centroid_3d_v2": null,
+      "bbox_3d_min_v1": [
+        -0.18609516322612762,
+        -0.16018427908420563,
+        0.43691232800483704
+      ],
+      "bbox_3d_max_v1": [
+        -0.17583779990673065,
+        -0.14710299670696259,
+        0.4552125930786133
+      ],
+      "bbox_3d_min_v2": null,
+      "bbox_3d_max_v2": null,
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.7205770611763,
+      "mean_score": 1.2174749374389648,
+      "max_score": 1.2174749374389648,
+      "c_geo": 0.06280931085348129,
+      "c_match": 0.5390121936798096,
+      "c_render": 0.9510126709938049,
+      "vis_coverage": 0.9643835616438357,
+      "v1_crop_path": "verifier_crops/obj_11_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_11_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_11_pair.jpg",
+      "delta_3d_m": 0.0,
+      "scan2_frustum_ratio": 0.1667
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 12,
+      "candidate_type": "removed",
+      "has_video_1": true,
+      "has_video_2": false,
+      "n_frames_v1": 2,
+      "n_frames_v2": 0,
+      "best_frame_v1": 7,
+      "best_frame_v2": 30,
+      "bbox_2d_v1": [
+        214,
+        289,
+        255,
+        364
+      ],
+      "bbox_2d_v2": [
+        166,
+        242,
+        219,
+        300
+      ],
+      "centroid_3d_v1": [
+        -0.5186870694160461,
+        0.17299650609493256,
+        -0.12249515950679779
+      ],
+      "centroid_3d_v2": null,
+      "bbox_3d_min_v1": [
+        -0.5609299540519714,
+        0.1400442123413086,
+        -0.15567895770072937
+      ],
+      "bbox_3d_max_v1": [
+        -0.483399897813797,
+        0.20611773431301117,
+        -0.07633881270885468
+      ],
+      "bbox_3d_min_v2": null,
+      "bbox_3d_max_v2": null,
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.7431545257568359,
+      "mean_score": 0.7387651205062866,
+      "max_score": 0.800498366355896,
+      "c_geo": -7.038708281470463e-05,
+      "c_match": 0.48914390802383423,
+      "c_render": 0.43973129987716675,
+      "vis_coverage": 0.5631313131313131,
+      "v1_crop_path": "verifier_crops/obj_12_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_12_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_12_pair.jpg",
+      "delta_3d_m": 0.0,
+      "scan2_frustum_ratio": 0.0238
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 13,
+      "candidate_type": "moved",
+      "has_video_1": true,
+      "has_video_2": true,
+      "n_frames_v1": 6,
+      "n_frames_v2": 17,
+      "best_frame_v1": 12,
+      "best_frame_v2": 16,
+      "bbox_2d_v1": [
+        333,
+        368,
+        391,
+        517
+      ],
+      "bbox_2d_v2": [
+        241,
+        344,
+        391,
+        517
+      ],
+      "centroid_3d_v1": [
+        0.18912182748317719,
+        0.24461419880390167,
+        -0.23000064492225647
+      ],
+      "centroid_3d_v2": [
+        -0.1840280294418335,
+        -0.07354307919740677,
+        0.38474464416503906
+      ],
+      "bbox_3d_min_v1": [
+        0.038694094866514206,
+        0.14473210275173187,
+        -0.3322647213935852
+      ],
+      "bbox_3d_max_v1": [
+        0.28012749552726746,
+        0.3270207643508911,
+        -0.0729282796382904
+      ],
+      "bbox_3d_min_v2": [
+        -0.26986831426620483,
+        -0.12526297569274902,
+        0.3437343239784241
+      ],
+      "bbox_3d_max_v2": [
+        -0.11929627507925034,
+        -0.013003524392843246,
+        0.4327930808067322
+      ],
+      "delta_3d": 0.7863692769452405,
+      "dino_similarity": 0.9150345921516418,
+      "cross_view_overlap": 0.1013045608997345,
+      "mean_score": 0.8801434895266658,
+      "max_score": 1.1506117582321167,
+      "c_geo": 0.05051194317638874,
+      "c_match": 0.2155425250530243,
+      "c_render": 0.5970514118671417,
+      "vis_coverage": 0.8061684139387044,
+      "v1_crop_path": "verifier_crops/obj_13_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_13_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_13_pair.jpg",
+      "delta_3d_m": 6.6407980132227795
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 14,
+      "candidate_type": "removed",
+      "has_video_1": true,
+      "has_video_2": false,
+      "n_frames_v1": 3,
+      "n_frames_v2": 0,
+      "best_frame_v1": 11,
+      "best_frame_v2": 32,
+      "bbox_2d_v1": [
+        232,
+        272,
+        288,
+        315
+      ],
+      "bbox_2d_v2": [
+        243,
+        189,
+        289,
+        218
+      ],
+      "centroid_3d_v1": [
+        0.12236437201499939,
+        0.21921482682228088,
+        -0.30035334825515747
+      ],
+      "centroid_3d_v2": null,
+      "bbox_3d_min_v1": [
+        0.07648719847202301,
+        0.203184574842453,
+        -0.34233397245407104
+      ],
+      "bbox_3d_max_v1": [
+        0.21559685468673706,
+        0.25316372513771057,
+        -0.26745960116386414
+      ],
+      "bbox_3d_min_v2": null,
+      "bbox_3d_max_v2": null,
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.7516793012619019,
+      "mean_score": 0.6758001645406088,
+      "max_score": 0.7092810273170471,
+      "c_geo": 0.02546682395040989,
+      "c_match": 0.5683526992797852,
+      "c_render": 0.661849319934845,
+      "vis_coverage": 0.8873239436619719,
+      "v1_crop_path": "verifier_crops/obj_14_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_14_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_14_pair.jpg",
+      "delta_3d_m": 0.0,
+      "scan2_frustum_ratio": 0.2381
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 15,
+      "candidate_type": "removed",
+      "has_video_1": true,
+      "has_video_2": false,
+      "n_frames_v1": 1,
+      "n_frames_v2": 0,
+      "best_frame_v1": 11,
+      "best_frame_v2": 32,
+      "bbox_2d_v1": [
+        162,
+        264,
+        379,
+        372
+      ],
+      "bbox_2d_v2": [
+        182,
+        195,
+        343,
+        268
+      ],
+      "centroid_3d_v1": [
+        0.12009790539741516,
+        0.23211857676506042,
+        -0.29026633501052856
+      ],
+      "centroid_3d_v2": null,
+      "bbox_3d_min_v1": [
+        0.042112596333026886,
+        0.19176624715328217,
+        -0.3589744567871094
+      ],
+      "bbox_3d_max_v1": [
+        0.23318246006965637,
+        0.3213779032230377,
+        -0.21581007540225983
+      ],
+      "bbox_3d_min_v2": null,
+      "bbox_3d_max_v2": null,
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.7516793012619019,
+      "mean_score": 0.667513370513916,
+      "max_score": 0.667513370513916,
+      "c_geo": 0.0076577127911150455,
+      "c_match": 0.4176172912120819,
+      "c_render": 0.5497098565101624,
+      "vis_coverage": 0.8854199188261005,
+      "v1_crop_path": "verifier_crops/obj_15_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_15_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_15_pair.jpg",
+      "delta_3d_m": 0.0,
+      "scan2_frustum_ratio": 0.2619
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 16,
+      "candidate_type": "removed",
+      "has_video_1": true,
+      "has_video_2": false,
+      "n_frames_v1": 1,
+      "n_frames_v2": 0,
+      "best_frame_v1": 18,
+      "best_frame_v2": 4,
+      "bbox_2d_v1": [
+        179,
+        53,
+        240,
+        214
+      ],
+      "bbox_2d_v2": [
+        0,
+        71,
+        92,
+        289
+      ],
+      "centroid_3d_v1": [
+        -0.4646032750606537,
+        -0.047789476811885834,
+        -0.011105326004326344
+      ],
+      "centroid_3d_v2": null,
+      "bbox_3d_min_v1": [
+        -0.5052247047424316,
+        -0.16563285887241364,
+        -0.12703467905521393
+      ],
+      "bbox_3d_max_v1": [
+        -0.43263569474220276,
+        0.07913779467344284,
+        0.09099189192056656
+      ],
+      "bbox_3d_min_v2": null,
+      "bbox_3d_max_v2": null,
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.6630879640579224,
+      "mean_score": 0.6748006343841553,
+      "max_score": 0.6748006343841553,
+      "c_geo": 0.035217490047216415,
+      "c_match": 0.11979319155216217,
+      "c_render": 0.5035415887832642,
+      "vis_coverage": 0.8512339242266249,
+      "v1_crop_path": "verifier_crops/obj_16_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_16_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_16_pair.jpg",
+      "delta_3d_m": 0.0,
+      "scan2_frustum_ratio": 0.0952
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 17,
+      "candidate_type": "removed",
+      "has_video_1": true,
+      "has_video_2": false,
+      "n_frames_v1": 1,
+      "n_frames_v2": 0,
+      "best_frame_v1": 21,
+      "best_frame_v2": 37,
+      "bbox_2d_v1": [
+        132,
+        459,
+        251,
+        517
+      ],
+      "bbox_2d_v2": [
+        366,
+        309,
+        391,
+        347
+      ],
+      "centroid_3d_v1": [
+        -0.23414312303066254,
+        0.14306682348251343,
+        0.022978544235229492
+      ],
+      "centroid_3d_v2": null,
+      "bbox_3d_min_v1": [
+        -0.2405204176902771,
+        0.13614967465400696,
+        0.0107585359364748
+      ],
+      "bbox_3d_max_v1": [
+        -0.22803287208080292,
+        0.14932972192764282,
+        0.03841191902756691
+      ],
+      "bbox_3d_min_v2": null,
+      "bbox_3d_max_v2": null,
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.6086843013763428,
+      "mean_score": 0.7284109592437744,
+      "max_score": 0.7284109592437744,
+      "c_geo": 0.0038877378683537245,
+      "c_match": 0.5496440529823303,
+      "c_render": 0.773452639579773,
+      "vis_coverage": 1.0,
+      "v1_crop_path": "verifier_crops/obj_17_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_17_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_17_pair.jpg",
+      "delta_3d_m": 0.0,
+      "scan2_frustum_ratio": 0.0476
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 18,
+      "candidate_type": "removed",
+      "has_video_1": true,
+      "has_video_2": false,
+      "n_frames_v1": 1,
+      "n_frames_v2": 0,
+      "best_frame_v1": 24,
+      "best_frame_v2": 2,
+      "bbox_2d_v1": [
+        207,
+        219,
+        219,
+        251
+      ],
+      "bbox_2d_v2": [
+        0,
+        26,
+        24,
+        121
+      ],
+      "centroid_3d_v1": [
+        0.06353624910116196,
+        0.10139214247465134,
+        0.0841793343424797
+      ],
+      "centroid_3d_v2": null,
+      "bbox_3d_min_v1": [
+        0.050939448177814484,
+        0.09312634915113449,
+        0.050612203776836395
+      ],
+      "bbox_3d_max_v1": [
+        0.07636889815330505,
+        0.1149149164557457,
+        0.16420786082744598
+      ],
+      "bbox_3d_min_v2": null,
+      "bbox_3d_max_v2": null,
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.6555235385894775,
+      "mean_score": 0.7282828092575073,
+      "max_score": 0.7282828092575073,
+      "c_geo": 0.04108542576432228,
+      "c_match": 0.34881073236465454,
+      "c_render": 0.4660435616970062,
+      "vis_coverage": 0.6814404432132964,
+      "v1_crop_path": "verifier_crops/obj_18_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_18_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_18_pair.jpg",
+      "delta_3d_m": 0.0,
+      "scan2_frustum_ratio": 0.1667
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 19,
+      "candidate_type": "added",
+      "has_video_1": false,
+      "has_video_2": true,
+      "n_frames_v1": 0,
+      "n_frames_v2": 4,
+      "best_frame_v1": 26,
+      "best_frame_v2": 27,
+      "bbox_2d_v1": [
+        319,
+        297,
+        391,
+        401
+      ],
+      "bbox_2d_v2": [
+        307,
+        381,
+        382,
+        433
+      ],
+      "centroid_3d_v1": null,
+      "centroid_3d_v2": [
+        0.09727900475263596,
+        -0.022824682295322418,
+        0.3921571969985962
+      ],
+      "bbox_3d_min_v1": null,
+      "bbox_3d_max_v1": null,
+      "bbox_3d_min_v2": [
+        0.0637674480676651,
+        -0.044671040028333664,
+        0.35700228810310364
+      ],
+      "bbox_3d_max_v2": [
+        0.12663127481937408,
+        0.0027032773941755295,
+        0.4205659031867981
+      ],
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.8515360355377197,
+      "mean_score": 0.8101921081542969,
+      "max_score": 0.8628026843070984,
+      "c_geo": 0.016294216737151146,
+      "c_match": 0.6544800400733948,
+      "c_render": 0.7881879806518555,
+      "vis_coverage": 0.9158993247391037,
+      "v1_crop_path": "verifier_crops/obj_19_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_19_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_19_pair.jpg",
+      "delta_3d_m": 0.0
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 20,
+      "candidate_type": "added",
+      "has_video_1": false,
+      "has_video_2": true,
+      "n_frames_v1": 0,
+      "n_frames_v2": 1,
+      "best_frame_v1": 10,
+      "best_frame_v2": 9,
+      "bbox_2d_v1": [
+        205,
+        250,
+        238,
+        272
+      ],
+      "bbox_2d_v2": [
+        210,
+        228,
+        244,
+        250
+      ],
+      "centroid_3d_v1": null,
+      "centroid_3d_v2": [
+        0.086062490940094,
+        0.21001185476779938,
+        -0.2920995056629181
+      ],
+      "bbox_3d_min_v1": null,
+      "bbox_3d_max_v1": null,
+      "bbox_3d_min_v2": [
+        0.06514903903007507,
+        0.2033754289150238,
+        -0.3069576323032379
+      ],
+      "bbox_3d_max_v2": [
+        0.11490914225578308,
+        0.21917222440242767,
+        -0.26875439286231995
+      ],
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.845966100692749,
+      "mean_score": 0.6624011397361755,
+      "max_score": 0.6624011397361755,
+      "c_geo": 0.011178727261722088,
+      "c_match": 0.5618956685066223,
+      "c_render": 0.5985789895057678,
+      "vis_coverage": 0.8902027027027027,
+      "v1_crop_path": "verifier_crops/obj_20_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_20_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_20_pair.jpg",
+      "delta_3d_m": 0.0
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 21,
+      "candidate_type": "added",
+      "has_video_1": false,
+      "has_video_2": true,
+      "n_frames_v1": 0,
+      "n_frames_v2": 1,
+      "best_frame_v1": 20,
+      "best_frame_v2": 19,
+      "bbox_2d_v1": [
+        314,
+        80,
+        349,
+        150
+      ],
+      "bbox_2d_v2": [
+        368,
+        164,
+        388,
+        242
+      ],
+      "centroid_3d_v1": null,
+      "centroid_3d_v2": [
+        -0.05310632288455963,
+        0.2302444726228714,
+        -0.24766524136066437
+      ],
+      "bbox_3d_min_v1": null,
+      "bbox_3d_max_v1": null,
+      "bbox_3d_min_v2": [
+        -0.12182995676994324,
+        0.1422584354877472,
+        -0.3709719181060791
+      ],
+      "bbox_3d_max_v2": [
+        0.03772763907909393,
+        0.31465592980384827,
+        -0.14723524451255798
+      ],
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.6207720637321472,
+      "mean_score": 0.8213220238685608,
+      "max_score": 0.8213220238685608,
+      "c_geo": 0.011457445099949837,
+      "c_match": 0.0,
+      "c_render": 0.22292062640190125,
+      "vis_coverage": 0.3259493670886076,
+      "v1_crop_path": "verifier_crops/obj_21_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_21_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_21_pair.jpg",
+      "delta_3d_m": 0.0
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 22,
+      "candidate_type": "added",
+      "has_video_1": false,
+      "has_video_2": true,
+      "n_frames_v1": 0,
+      "n_frames_v2": 1,
+      "best_frame_v1": 25,
+      "best_frame_v2": 25,
+      "bbox_2d_v1": [
+        106,
+        88,
+        149,
+        109
+      ],
+      "bbox_2d_v2": [
+        295,
+        105,
+        337,
+        119
+      ],
+      "centroid_3d_v1": null,
+      "centroid_3d_v2": [
+        -0.250345379114151,
+        -0.12198798358440399,
+        0.4001642167568207
+      ],
+      "bbox_3d_min_v1": null,
+      "bbox_3d_max_v1": null,
+      "bbox_3d_min_v2": [
+        -0.3333596885204315,
+        -0.15497986972332,
+        0.27781522274017334
+      ],
+      "bbox_3d_max_v2": [
+        -0.09774018824100494,
+        -0.07134892046451569,
+        0.4953230619430542
+      ],
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.6504313945770264,
+      "mean_score": 0.6621299982070923,
+      "max_score": 0.6621299982070923,
+      "c_geo": 0.02933964505791664,
+      "c_match": 0.0,
+      "c_render": 0.19756129384040833,
+      "vis_coverage": 0.3212669683257919,
+      "v1_crop_path": "verifier_crops/obj_22_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_22_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_22_pair.jpg",
+      "delta_3d_m": 0.0
+    },
+    {
+      "scene_name": "Take_1_vs_Take_3_relook_Take_4",
+      "obj_id": 23,
+      "candidate_type": "added",
+      "has_video_1": false,
+      "has_video_2": true,
+      "n_frames_v1": 0,
+      "n_frames_v2": 1,
+      "best_frame_v1": 4,
+      "best_frame_v2": 29,
+      "bbox_2d_v1": [
+        375,
+        195,
+        391,
+        297
+      ],
+      "bbox_2d_v2": [
+        368,
+        204,
+        391,
+        294
+      ],
+      "centroid_3d_v1": null,
+      "centroid_3d_v2": [
+        -0.2541157007217407,
+        -0.1891685128211975,
+        0.3896534740924835
+      ],
+      "bbox_3d_min_v1": null,
+      "bbox_3d_max_v1": null,
+      "bbox_3d_min_v2": [
+        -0.2569925785064697,
+        -0.21571838855743408,
+        0.38084882497787476
+      ],
+      "bbox_3d_max_v2": [
+        -0.2519468665122986,
+        -0.1653822660446167,
+        0.4067724645137787
+      ],
+      "delta_3d": 0.0,
+      "dino_similarity": 0.0,
+      "cross_view_overlap": 0.7964920997619629,
+      "mean_score": 0.6621795296669006,
+      "max_score": 0.6621795296669006,
+      "c_geo": 0.016389861702919006,
+      "c_match": 0.49919453263282776,
+      "c_render": 0.806703507900238,
+      "vis_coverage": 1.0,
+      "v1_crop_path": "verifier_crops/obj_23_v1_crop.jpg",
+      "v2_crop_path": "verifier_crops/obj_23_v2_crop.jpg",
+      "pair_image_path": "verifier_crops/obj_23_pair.jpg",
+      "delta_3d_m": 0.0
+    }
+  ],
+  "vlm_verdicts": {
+    "0": {
+      "verdict": "none",
+      "confidence": 0.592,
+      "p_change": 0.408,
+      "label": "table",
+      "summary": "The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.018,
+      "base_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 0.98, \"label\": \"table\", \"summary\": \"The table appears unchanged between frames; low geometric and semantic costs indicate no real change, despite high cross-view similarity score.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "1": {
+      "verdict": "moved",
+      "confidence": 0.6468,
+      "p_change": 0.6468,
+      "label": "chair armrest",
+      "summary": "The black textured armrest of a chair has visibly shifted position between frames, confirmed by consistent 3D displacement and high cross-view object similarity.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object mismatch.\"}</answer>",
+      "rank_p": 0.738,
+      "base_raw_response": "<answer>{\"verdict\": \"moved\", \"confidence\": 0.92, \"label\": \"chair armrest\", \"summary\": \"The black textured armrest of a chair has visibly shifted position between frames, confirmed by consistent 3D displacement and high cross-view object similarity.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object mismatch.\"}</answer>"
+    },
+    "2": {
+      "verdict": "moved",
+      "confidence": 0.7005,
+      "p_change": 0.7005,
+      "label": "sofa",
+      "summary": "The sofa has visibly shifted position between frames, confirmed by consistent 3D geometry and high cross-view object similarity despite camera angle change.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object mismatch.\"}</answer>",
+      "rank_p": 0.738,
+      "base_raw_response": "<answer>{\"verdict\": \"moved\", \"confidence\": 0.92, \"label\": \"sofa\", \"summary\": \"The sofa has visibly shifted position between frames, confirmed by consistent 3D geometry and high cross-view object similarity despite camera angle change.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object mismatch.\"}</answer>"
+    },
+    "3": {
+      "verdict": "none",
+      "confidence": 0.6948,
+      "p_change": 0.3052,
+      "label": "chair",
+      "summary": "The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.042,
+      "base_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 0.95, \"label\": \"chair\", \"summary\": \"The chair appears identical in both frames with no displacement, and DINOv3 similarity score of 0.000 confirms no semantic change.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "4": {
+      "verdict": "none",
+      "confidence": 0.775,
+      "p_change": 0.225,
+      "label": "ceiling light fixture",
+      "summary": "The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object matc",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.066,
+      "base_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 0.92, \"label\": \"ceiling light fixture\", \"summary\": \"The circular light fixture appears identical in both frames, with consistent geometry, lighting, and position, indicating no physical change.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "5": {
+      "verdict": "moved",
+      "confidence": 0.6439,
+      "p_change": 0.6439,
+      "label": "sign",
+      "summary": "The sign has been relocated from a wall-mounted position to a lower surface, confirmed by 3D displacement and consistent DINOv3 similarity.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.738,
+      "base_raw_response": "<answer>{\"verdict\": \"moved\", \"confidence\": 0.92, \"label\": \"sign\", \"summary\": \"The sign has been relocated from a wall-mounted position to a lower surface, confirmed by 3D displacement and consistent DINOv3 similarity.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "6": {
+      "verdict": "removed",
+      "confidence": 0.7089,
+      "p_change": 0.7089,
+      "label": "object",
+      "summary": "Object is removed as it appears in Video 1 but absent in Video 2, confirmed by zero DINOv3 similarity and zero 3D displacement.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.762,
+      "base_raw_response": "<answer>{\"verdict\": \"removed\", \"confidence\": 0.95, \"label\": \"object\", \"summary\": \"Object is removed as it appears in Video 1 but absent in Video 2, confirmed by zero DINOv3 similarity and zero 3D displacement.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "7": {
+      "verdict": "moved",
+      "confidence": 0.6335,
+      "p_change": 0.6335,
+      "label": "chair",
+      "summary": "The chair's position shifted slightly between frames, confirmed by low geometric cost and high DINOv3 similarity, indicating a real movement.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object mismatch.\"}</answer>",
+      "rank_p": 0.738,
+      "base_raw_response": "<answer>{\"verdict\": \"moved\", \"confidence\": 0.92, \"label\": \"chair\", \"summary\": \"The chair's position shifted slightly between frames, confirmed by low geometric cost and high DINOv3 similarity, indicating a real movement.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object mismatch.\"}</answer>"
+    },
+    "8": {
+      "verdict": "none",
+      "confidence": 0.8466,
+      "p_change": 0.1534,
+      "label": "chair",
+      "summary": "The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.042,
+      "base_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 0.95, \"label\": \"chair\", \"summary\": \"The chair appears unchanged between frames; low DINOv3 similarity and zero 3D displacement indicate no physical change.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "9": {
+      "verdict": "moved",
+      "confidence": 0.9656,
+      "p_change": 0.9656,
+      "label": "chair",
+      "summary": "Verified moved chair across multi-view 3D registration (mean_cost=1.05, max_cost=1.40, render_diff=0.66, delta_3d=0.803m, vis_coverage=0.86).",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"moved\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object mismatch.\"}</answer>",
+      "rank_p": 0.934,
+      "base_raw_response": "<answer>{\"verdict\": \"moved\", \"confidence\": 0.92, \"label\": \"chair\", \"summary\": \"The chair appears to have been slightly repositioned between frames, confirmed by low geometric cost and high cross-view similarity.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"moved\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object mismatch.\"}</answer>"
+    },
+    "10": {
+      "verdict": "moved",
+      "confidence": 0.9342,
+      "p_change": 0.9342,
+      "label": "chair",
+      "summary": "The chair was physically repositioned, confirmed by consistent 3D geometry and semantic matching despite minor viewpoint shift.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.738,
+      "base_raw_response": "<answer>{\"verdict\": \"moved\", \"confidence\": 0.92, \"label\": \"chair\", \"summary\": \"The chair was physically repositioned, confirmed by consistent 3D geometry and semantic matching despite minor viewpoint shift.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "11": {
+      "verdict": "none",
+      "confidence": 0.5,
+      "p_change": 0.7396,
+      "label": "object shadow",
+      "summary": "The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.018,
+      "base_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 0.98, \"label\": \"object shadow\", \"summary\": \"The red box highlights a shadow cast by an object, which persists identically in both frames, indicating no physical change.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "12": {
+      "verdict": "removed",
+      "confidence": 0.7318,
+      "p_change": 0.7318,
+      "label": "potted plant",
+      "summary": "Verified removed potted plant across multi-view 3D registration (mean_cost=0.74, max_cost=0.80, render_diff=0.44, delta_3d=0.000m, vis_coverage=0.56).",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"removed\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.982,
+      "base_raw_response": "<answer>{\"verdict\": \"removed\", \"confidence\": 0.98, \"label\": \"potted plant\", \"summary\": \"The potted plant is absent in the second video, confirmed by zero DINOv3 similarity and zero 3D displacement, despite consistent camera viewpoint.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"removed\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "13": {
+      "verdict": "moved",
+      "confidence": 0.8947,
+      "p_change": 0.8947,
+      "label": "chair",
+      "summary": "Verified moved chair across multi-view 3D registration (mean_cost=0.88, max_cost=1.15, render_diff=0.60, delta_3d=6.641m, vis_coverage=0.81).",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"moved\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object mismatch.\"}</answer>",
+      "rank_p": 0.934,
+      "base_raw_response": "<answer>{\"verdict\": \"moved\", \"confidence\": 0.92, \"label\": \"chair\", \"summary\": \"The chair was physically relocated from near the rug to beside the table, confirmed by 3D displacement and consistent DINOv3 similarity.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"moved\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by low geometric displacement, high semantic similarity, and full visibility coverage with no cross-view object mismatch.\"}</answer>"
+    },
+    "14": {
+      "verdict": "removed",
+      "confidence": 0.636,
+      "p_change": 0.636,
+      "label": "stack of books",
+      "summary": "Verified removed stack of books across multi-view 3D registration (mean_cost=0.68, max_cost=0.71, render_diff=0.66, delta_3d=0.000m, vis_coverage=0.89).",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"removed\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.982,
+      "base_raw_response": "<answer>{\"verdict\": \"removed\", \"confidence\": 0.98, \"label\": \"stack of books\", \"summary\": \"The stack of books is absent in Video 2, confirmed by zero DINOv3 similarity and zero 3D displacement, despite high visibility coverage.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"removed\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "15": {
+      "verdict": "removed",
+      "confidence": 0.5,
+      "p_change": 0.4312,
+      "label": "stack of books",
+      "summary": "The stack of books is absent in the second view, confirmed by zero DINOv3 similarity and zero 3D displacement, indicating removal.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.786,
+      "base_raw_response": "<answer>{\"verdict\": \"removed\", \"confidence\": 0.98, \"label\": \"stack of books\", \"summary\": \"The stack of books is absent in the second view, confirmed by zero DINOv3 similarity and zero 3D displacement, indicating removal.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "16": {
+      "verdict": "none",
+      "confidence": 0.913,
+      "p_change": 0.087,
+      "label": "wall poster",
+      "summary": "The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.018,
+      "base_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 0.98, \"label\": \"wall poster\", \"summary\": \"The poster appears unchanged between frames; low semantic similarity and zero centroid displacement indicate no physical change.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "17": {
+      "verdict": "removed",
+      "confidence": 0.6954,
+      "p_change": 0.6954,
+      "label": "book",
+      "summary": "Verified removed book across multi-view 3D registration (mean_cost=0.73, max_cost=0.73, render_diff=0.77, delta_3d=0.000m, vis_coverage=1.00).",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"removed\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.982,
+      "base_raw_response": "<answer>{\"verdict\": \"removed\", \"confidence\": 0.98, \"label\": \"book\", \"summary\": \"The blue book is present in Video 1 but absent in Video 2, confirmed by zero DINOv3 similarity and zero 3D displacement.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"removed\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "18": {
+      "verdict": "none",
+      "confidence": 0.8825,
+      "p_change": 0.1175,
+      "label": "object",
+      "summary": "The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.018,
+      "base_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 0.98, \"label\": \"object\", \"summary\": \"The object is a false positive due to camera viewpoint shift and occlusion, not a real change.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "19": {
+      "verdict": "added",
+      "confidence": 0.8075,
+      "p_change": 0.8075,
+      "label": "stack of books",
+      "summary": "Verified added stack of books across multi-view 3D registration (mean_cost=0.81, max_cost=0.86, render_diff=0.79, delta_3d=0.000m, vis_coverage=0.92).",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"added\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.982,
+      "base_raw_response": "<answer>{\"verdict\": \"added\", \"confidence\": 0.98, \"label\": \"stack of books\", \"summary\": \"A stack of books appears in Video 2 where none existed in Video 1, confirmed by high geometric and semantic change scores and full visibility.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"added\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "20": {
+      "verdict": "added",
+      "confidence": 0.6017,
+      "p_change": 0.6017,
+      "label": "cup",
+      "summary": "Verified added cup across multi-view 3D registration (mean_cost=0.66, max_cost=0.66, render_diff=0.60, delta_3d=0.000m, vis_coverage=0.89).",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"added\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.982,
+      "base_raw_response": "<answer>{\"verdict\": \"added\", \"confidence\": 0.98, \"label\": \"cup\", \"summary\": \"A white mug appears in Video 2 where none existed in Video 1, confirmed by low DINOv3 similarity and high visibility coverage.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"added\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "21": {
+      "verdict": "none",
+      "confidence": 0.8076,
+      "p_change": 0.1924,
+      "label": "chair",
+      "summary": "The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.018,
+      "base_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 0.98, \"label\": \"chair\", \"summary\": \"The chair appears identical in both frames, with no displacement or occlusion; low semantic similarity and high geometric consistency indicate no real change.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "22": {
+      "verdict": "none",
+      "confidence": 0.9191,
+      "p_change": 0.0809,
+      "label": "pillow",
+      "summary": "The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.018,
+      "base_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 0.98, \"label\": \"pillow\", \"summary\": \"The pillow appears in both frames, with identical position and appearance, indicating no change.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    },
+    "23": {
+      "verdict": "none",
+      "confidence": 0.9191,
+      "p_change": 0.0809,
+      "label": "wall poster",
+      "summary": "The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.",
+      "format_ok": true,
+      "raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>",
+      "rank_p": 0.018,
+      "base_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 0.98, \"label\": \"wall poster\", \"summary\": \"The red triangular shape is a consistent part of the poster design, not a new object; DINOv3 similarity score confirms it's the same poster in both views.\"}</answer>",
+      "rl_raw_response": "<answer>{\"verdict\": \"none\", \"confidence\": 1.00, \"label\": \"none\", \"summary\": \"The candidate region shows no real object change \u2014 it's a false positive caused by camera viewpoint shift and lighting variation, confirmed by zero 3D displacement, zero semantic similarity, and full visibility coverage with no cross-view object match.\"}</answer>"
+    }
+  }
+}

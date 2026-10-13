@@ -1,0 +1,381 @@
+{
+  "meta": {
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "torch": "2.5.1+cu121",
+    "sam_backend": "sam2.1",
+    "n_frames": [
+      28,
+      42
+    ]
+  },
+  "median": {
+    "Take_1_vs_Take_2": {
+      "stage0_keyframes_s": 25.942,
+      "stage12_pi3_sam_dinov3_s": 214.822,
+      "stage4_vlm_load_s": 16.172,
+      "stage4_vlm_verify_s": 234.836,
+      "stage5_report_export_s": 1.15,
+      "total_in_process_s": 493.879,
+      "stage1b_metric_scale_s+stage3_ledger_s": 0.073,
+      "per_card": 13.813882352941178,
+      "cards": 17,
+      "sd:Image loading": 0.87,
+      "sd:Depth and pose estimation": 15.01,
+      "sd:Similarity matrix": 2.45,
+      "sd:Confidence computation": 6.86,
+      "sd:SAM masks": 72.04,
+      "sd:Cost map computation": 53.76,
+      "sd:Voxelization and features": 62.55,
+      "sd:Object detection": 0.8,
+      "sd:Object mask generation": 0.55,
+      "sd:rest": 11.607,
+      "wall_s": 518.3
+    },
+    "Take_1_vs_Take_3": {
+      "stage0_keyframes_s": 27.669,
+      "stage12_pi3_sam_dinov3_s": 213.07,
+      "stage4_vlm_load_s": 16.632,
+      "stage4_vlm_verify_s": 269.463,
+      "stage5_report_export_s": 1.199,
+      "total_in_process_s": 528.015,
+      "stage1b_metric_scale_s+stage3_ledger_s": 0.066,
+      "per_card": 14.182263157894738,
+      "cards": 19,
+      "sd:Image loading": 0.81,
+      "sd:Depth and pose estimation": 14.2,
+      "sd:Similarity matrix": 2.36,
+      "sd:Confidence computation": 6.56,
+      "sd:SAM masks": 71.45,
+      "sd:Cost map computation": 54.77,
+      "sd:Voxelization and features": 61.01,
+      "sd:Object detection": 0.75,
+      "sd:Object mask generation": 0.46,
+      "sd:rest": 11.262,
+      "wall_s": 550.7
+    },
+    "Take_1_vs_Take_3_relook_Take_4": {
+      "stage0_keyframes_s": 35.986,
+      "stage12_pi3_sam_dinov3_s": 270.677,
+      "stage4_vlm_load_s": 13.727,
+      "stage4_vlm_verify_s": 334.675,
+      "stage5_report_export_s": 1.268,
+      "total_in_process_s": 657.797,
+      "stage1b_metric_scale_s+stage3_ledger_s": 0.093,
+      "per_card": 13.944791666666667,
+      "cards": 24,
+      "sd:Image loading": 1.05,
+      "sd:Depth and pose estimation": 14.02,
+      "sd:Similarity matrix": 3.68,
+      "sd:Confidence computation": 8.44,
+      "sd:SAM masks": 88.72,
+      "sd:Cost map computation": 76.3,
+      "sd:Voxelization and features": 76.42,
+      "sd:Object detection": 1.22,
+      "sd:Object mask generation": 0.71,
+      "sd:rest": 15.200000000000045,
+      "wall_s": 682.3
+    }
+  },
+  "all": {
+    "Take_1_vs_Take_2": {
+      "stage0_keyframes_s": [
+        25.942,
+        26.343,
+        25.901
+      ],
+      "stage12_pi3_sam_dinov3_s": [
+        211.24,
+        214.822,
+        219.087
+      ],
+      "stage4_vlm_load_s": [
+        17.317,
+        16.172,
+        15.284
+      ],
+      "stage4_vlm_verify_s": [
+        231.95,
+        235.306,
+        234.836
+      ],
+      "stage5_report_export_s": [
+        1.192,
+        1.15,
+        0.989
+      ],
+      "total_in_process_s": [
+        487.708,
+        493.879,
+        496.177
+      ],
+      "stage1b_metric_scale_s+stage3_ledger_s": [
+        0.06,
+        0.075,
+        0.073
+      ],
+      "per_card": [
+        13.644117647058822,
+        13.841529411764707,
+        13.813882352941178
+      ],
+      "cards": [
+        17
+      ],
+      "sd:Image loading": [
+        1.04,
+        0.81,
+        0.87
+      ],
+      "sd:Depth and pose estimation": [
+        15.01,
+        15.21,
+        14.12
+      ],
+      "sd:Similarity matrix": [
+        2.36,
+        2.5,
+        2.45
+      ],
+      "sd:Confidence computation": [
+        6.53,
+        6.98,
+        6.86
+      ],
+      "sd:SAM masks": [
+        71.3,
+        72.04,
+        72.1
+      ],
+      "sd:Cost map computation": [
+        53.76,
+        53.28,
+        55.57
+      ],
+      "sd:Voxelization and features": [
+        59.94,
+        62.55,
+        65.69
+      ],
+      "sd:Object detection": [
+        0.78,
+        0.81,
+        0.8
+      ],
+      "sd:Object mask generation": [
+        0.44,
+        0.56,
+        0.55
+      ],
+      "sd:rest": [
+        11.230000000000018,
+        11.74199999999999,
+        11.607
+      ],
+      "wall_s": [
+        511.8,
+        518.3,
+        519.9
+      ]
+    },
+    "Take_1_vs_Take_3": {
+      "stage0_keyframes_s": [
+        27.669,
+        27.781,
+        27.336
+      ],
+      "stage12_pi3_sam_dinov3_s": [
+        214.262,
+        209.737,
+        213.07
+      ],
+      "stage4_vlm_load_s": [
+        16.574,
+        16.632,
+        17.126
+      ],
+      "stage4_vlm_verify_s": [
+        272.846,
+        251.627,
+        269.463
+      ],
+      "stage5_report_export_s": [
+        1.221,
+        1.199,
+        0.95
+      ],
+      "total_in_process_s": [
+        532.668,
+        507.049,
+        528.015
+      ],
+      "stage1b_metric_scale_s+stage3_ledger_s": [
+        0.085,
+        0.066,
+        0.063
+      ],
+      "per_card": [
+        14.360315789473685,
+        13.243526315789474,
+        14.182263157894738
+      ],
+      "cards": [
+        19
+      ],
+      "sd:Image loading": [
+        0.81,
+        0.83,
+        0.74
+      ],
+      "sd:Depth and pose estimation": [
+        14.0,
+        14.2,
+        14.76
+      ],
+      "sd:Similarity matrix": [
+        2.36,
+        2.37,
+        2.34
+      ],
+      "sd:Confidence computation": [
+        6.56,
+        6.92,
+        6.55
+      ],
+      "sd:SAM masks": [
+        71.45,
+        71.92,
+        71.3
+      ],
+      "sd:Cost map computation": [
+        56.54,
+        51.72,
+        54.77
+      ],
+      "sd:Voxelization and features": [
+        61.01,
+        60.51,
+        61.33
+      ],
+      "sd:Object detection": [
+        0.82,
+        0.75,
+        0.75
+      ],
+      "sd:Object mask generation": [
+        0.62,
+        0.46,
+        0.46
+      ],
+      "sd:rest": [
+        11.262,
+        11.387,
+        10.909999999999997
+      ],
+      "wall_s": [
+        557.5,
+        530.1,
+        550.7
+      ]
+    },
+    "Take_1_vs_Take_3_relook_Take_4": {
+      "stage0_keyframes_s": [
+        35.98,
+        35.995,
+        35.986
+      ],
+      "stage12_pi3_sam_dinov3_s": [
+        276.1,
+        270.677,
+        267.619
+      ],
+      "stage4_vlm_load_s": [
+        13.388,
+        13.727,
+        15.309
+      ],
+      "stage4_vlm_verify_s": [
+        334.675,
+        333.72,
+        337.48
+      ],
+      "stage5_report_export_s": [
+        1.268,
+        1.175,
+        1.304
+      ],
+      "total_in_process_s": [
+        661.51,
+        655.395,
+        657.797
+      ],
+      "stage1b_metric_scale_s+stage3_ledger_s": [
+        0.093,
+        0.095,
+        0.09
+      ],
+      "per_card": [
+        13.944791666666667,
+        13.905000000000001,
+        14.061666666666667
+      ],
+      "cards": [
+        24
+      ],
+      "sd:Image loading": [
+        1.06,
+        0.94,
+        1.05
+      ],
+      "sd:Depth and pose estimation": [
+        14.02,
+        14.25,
+        13.14
+      ],
+      "sd:Similarity matrix": [
+        3.68,
+        3.69,
+        3.5
+      ],
+      "sd:Confidence computation": [
+        8.44,
+        8.62,
+        8.12
+      ],
+      "sd:SAM masks": [
+        91.02,
+        88.72,
+        88.33
+      ],
+      "sd:Cost map computation": [
+        77.52,
+        76.3,
+        75.2
+      ],
+      "sd:Voxelization and features": [
+        78.34,
+        76.12,
+        76.42
+      ],
+      "sd:Object detection": [
+        1.22,
+        1.22,
+        1.09
+      ],
+      "sd:Object mask generation": [
+        0.71,
+        0.72,
+        0.67
+      ],
+      "sd:rest": [
+        15.200000000000045,
+        15.287000000000035,
+        14.529000000000025
+      ],
+      "wall_s": [
+        685.6,
+        679.3,
+        682.3
+      ]
+    }
+  }
+}
